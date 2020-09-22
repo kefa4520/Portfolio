@@ -1,0 +1,52 @@
+
+.card-deck{
+  transform: translateY(65%);
+  margin: auto;
+  padding:0px;
+  max-width: 960px;
+  position: relative;
+
+}
+.card{
+  background-color: rgb(229, 250, 237);
+}
+
+.card-img-top:hover{
+  opacity: 0.4;
+}
+
+
+@media only screen and (max-width: 610px){
+  .card-deck {
+    margin: auto;
+    transform: translateY(5%);
+    max-width: 55%;}
+}
+@media only screen and (max-width: 1130px 610px){
+  .card-deck {
+    max-width: 85%;}
+}
+
+
+.cards:before {
+
+  content: ' ';
+  background-position: center;
+  background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 0.8;
+  opacity: 0.75;
+  background-image: url("/assets/img/projects.jpg");
+  background-repeat: no-repeat;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
